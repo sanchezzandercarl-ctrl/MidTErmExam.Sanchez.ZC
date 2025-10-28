@@ -34,10 +34,6 @@ Partial Class Form1
         Me.txtArtistName = New System.Windows.Forms.TextBox()
         Me.nudArtworkPrice = New System.Windows.Forms.NumericUpDown()
         Me.btnAddWork = New System.Windows.Forms.Button()
-        Me.lblArtwork = New System.Windows.Forms.Label()
-        Me.lblArtistname = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
-        Me.lblCategory = New System.Windows.Forms.Label()
         Me.btnAnalizeExhibit = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.lsbDetails = New System.Windows.Forms.ListBox()
@@ -113,7 +109,7 @@ Partial Class Form1
         Me.nudArtworkPrice.BackColor = System.Drawing.SystemColors.GradientActiveCaption
         Me.nudArtworkPrice.Location = New System.Drawing.Point(12, 189)
         Me.nudArtworkPrice.Name = "nudArtworkPrice"
-        Me.nudArtworkPrice.Size = New System.Drawing.Size(102, 20)
+        Me.nudArtworkPrice.Size = New System.Drawing.Size(114, 20)
         Me.nudArtworkPrice.TabIndex = 10
         '
         'btnAddWork
@@ -125,42 +121,6 @@ Partial Class Form1
         Me.btnAddWork.TabIndex = 11
         Me.btnAddWork.Text = "ADD WORK"
         Me.btnAddWork.UseVisualStyleBackColor = False
-        '
-        'lblArtwork
-        '
-        Me.lblArtwork.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblArtwork.Location = New System.Drawing.Point(335, 15)
-        Me.lblArtwork.Name = "lblArtwork"
-        Me.lblArtwork.Size = New System.Drawing.Size(332, 93)
-        Me.lblArtwork.TabIndex = 12
-        Me.lblArtwork.Text = "Artwork"
-        '
-        'lblArtistname
-        '
-        Me.lblArtistname.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblArtistname.Location = New System.Drawing.Point(335, 117)
-        Me.lblArtistname.Name = "lblArtistname"
-        Me.lblArtistname.Size = New System.Drawing.Size(332, 93)
-        Me.lblArtistname.TabIndex = 13
-        Me.lblArtistname.Text = "Artist Name"
-        '
-        'lblPrice
-        '
-        Me.lblPrice.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblPrice.Location = New System.Drawing.Point(335, 219)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(332, 93)
-        Me.lblPrice.TabIndex = 14
-        Me.lblPrice.Text = "Price"
-        '
-        'lblCategory
-        '
-        Me.lblCategory.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.lblCategory.Location = New System.Drawing.Point(335, 322)
-        Me.lblCategory.Name = "lblCategory"
-        Me.lblCategory.Size = New System.Drawing.Size(332, 93)
-        Me.lblCategory.TabIndex = 15
-        Me.lblCategory.Text = "Category"
         '
         'btnAnalizeExhibit
         '
@@ -184,24 +144,22 @@ Partial Class Form1
         '
         'lsbDetails
         '
+        Me.lsbDetails.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.lsbDetails.FormattingEnabled = True
-        Me.lsbDetails.Location = New System.Drawing.Point(139, 189)
+        Me.lsbDetails.Items.AddRange(New Object() {"Sunrise Bloom", "Metal Dreams", "Pexel Heart"})
+        Me.lsbDetails.Location = New System.Drawing.Point(132, 189)
         Me.lsbDetails.Name = "lsbDetails"
-        Me.lsbDetails.Size = New System.Drawing.Size(190, 186)
+        Me.lsbDetails.Size = New System.Drawing.Size(197, 225)
         Me.lsbDetails.TabIndex = 19
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(342, 428)
         Me.Controls.Add(Me.lsbDetails)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnAnalizeExhibit)
-        Me.Controls.Add(Me.lblCategory)
-        Me.Controls.Add(Me.lblPrice)
-        Me.Controls.Add(Me.lblArtistname)
-        Me.Controls.Add(Me.lblArtwork)
         Me.Controls.Add(Me.btnAddWork)
         Me.Controls.Add(Me.nudArtworkPrice)
         Me.Controls.Add(Me.txtArtistName)
@@ -227,10 +185,6 @@ Partial Class Form1
     Friend WithEvents txtArtistName As TextBox
     Friend WithEvents nudArtworkPrice As NumericUpDown
     Friend WithEvents btnAddWork As Button
-    Friend WithEvents lblArtwork As Label
-    Friend WithEvents lblArtistname As Label
-    Friend WithEvents lblPrice As Label
-    Friend WithEvents lblCategory As Label
     Friend WithEvents btnAnalizeExhibit As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents lsbDetails As ListBox
